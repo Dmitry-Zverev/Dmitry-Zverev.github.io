@@ -1,0 +1,147 @@
+.news{
+    @extend %padding-y-48;
+    
+    .news-item{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        margin-top: 15px;
+        margin-bottom: 16px;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 33.333%;
+        /*max-height: 346px;*/
+        padding-left: 20px;
+        padding-right: 20px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; 
+        @media(max-width:553px){
+            height: auto;
+        }
+        @media(max-width: 900px){
+            width: 100%;
+        }
+        @media (min-width: 901px) and (max-width: 1199px){
+            width: 50%;
+        }
+        &:before{
+            @media(max-width:553px){
+                display: none;
+            }
+            @media(max-width: 900px){
+                content: " ";
+                position: absolute;
+                top: -15px;
+                left: 20px;
+                height: 1px;
+                width: calc(100vw - 80px)!important;
+                background: #000;
+            }            
+        }
+        &:nth-child(3n + 1):before{
+            content: " ";
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            height: 1px;
+            width: calc(100vw - 80px);
+            max-width: 1120px;
+            background: #000;
+            @media(max-width:553px){
+                display: none;
+            }
+            @media (min-width: 901px) and (max-width: 1199px){
+                display: none;
+            }
+        }
+        &:nth-child(2n + 1):before{
+            @media (min-width: 901px) and (max-width: 1199px){
+                content: " ";
+                position: absolute;
+                top: -15px;
+                left: 20px;
+                height: 1px;
+                width: calc(100vw - 80px)!important;
+                background: $black;
+            }
+        }
+        &:nth-child(2n + 1):after{
+            @media (min-width: 901px) and (max-width: 1199px){
+                content: " ";
+                position: absolute;
+                top: -15px;
+                left: 20px;
+                height: 1px;
+                width: calc(100vw - 80px)!important;
+                background: $black;
+            }
+	    }
+        .news-item__img{
+            max-width: 120px;
+            margin-right: 20px;
+            @media(max-width:553px){
+                max-width: 100%;
+                margin-right: 0;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
+        .news-item__text{
+            flex: 2;
+            @media(max-width:553px){
+                webkit-box-flex: none;
+                -ms-flex: none;
+                -webkit-box-flex: 0;
+                flex: none;
+                width: 100%;
+            }
+            @media(max-width: 900px){
+                width: 100%;
+            }
+            .news-title{
+                margin: 0;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 1.1;
+                @media(max-width:553px){
+                    text-align: center;
+                }
+                    .news-title__link{
+                        color: #000;
+                        text-decoration: none;
+                        display: inline-block;
+                        max-width: 190px;
+                        white-space: nowrap; 
+                        overflow: hidden;
+                        -o-text-overflow: ellipsis;
+                        text-overflow: ellipsis;
+                        @media(max-width: 900px){
+                            max-width: auto;
+                        }
+                        &:hover{
+                            color: #013162;
+                        }
+                    }
+                }
+            .news-text{
+                margin: 10px 0;
+            }
+        }
+        .news-item__btn{
+            width: 100%;
+            align-self: flex-end;
+            @media(max-width:553px){
+                text-align: center;
+            }
+            @media(max-width: 1199px){
+                margin-top: 10px;
+            }
+            .news-link{
+                @extend %button;
+                padding: 0.2em 1em;
+                font-size: 14px;
+            }
+        }
+    }
+}

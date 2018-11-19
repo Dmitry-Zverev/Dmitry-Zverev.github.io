@@ -95,9 +95,13 @@
                 -webkit-box-flex: 0;
                 flex: none;
                 width: 100%;
-            }
-            @media(max-width: 900px){
-                width: 100%;
+                
+                
+                @media(max-width: 900px){
+                    width: 100%;
+                }
+                
+                
             }
             .news-title{
                 margin: 0;

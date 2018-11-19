@@ -46,10 +46,6 @@ img {
     border-style: none;
 }
 
-@-ms-viewport {
-    width: device-width;
-}
-
 button,
 html [type="button"],
 [type="submit"] {
@@ -90,8 +86,8 @@ textarea {
     padding-top: 70px;
     margin: 0;
     -webkit-box-flex: 0;
-    -ms-flex: none;
     -webkit-flex: none;
+    -ms-flex: none;
     flex: none;
     padding-left: 20px;
     margin-right: 70px;
@@ -106,9 +102,9 @@ textarea {
 .header .header__slogan {
     padding-top: 95px;
     webkit-box-flex: 2;
-    -ms-flex: 2;
     -webkit-box-flex: 2;
     -webkit-flex: 2;
+    -ms-flex: 2;
     flex: 2;
     padding-left: 20px;
 }
@@ -269,7 +265,7 @@ textarea {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 553px) and (max-width: 900px) {
     .news .news-item .news-item__text {
         width: 100%;
     }

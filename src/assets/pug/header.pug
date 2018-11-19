@@ -1,10 +1,33 @@
-header
-    .header
-        .container
-            .row
-                .header__logo
-                    a(href="#")
-                        img(src="assets/i/logo.png" alt="logo")
-                .header__slogan
-                    h1.slogan
-                        a(href="#" class="slogan__link") <span class="no-wrap">Questions will</span> <span class="no-wrap"> be answered</span>
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        link(rel="stylesheet" href="assets/css/style.css")
+        //Useful meta tags
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(name="description" content="")
+        meta(name="keywords" content="")
+        meta(name="robots" content="index, follow, noodp")
+        meta(name="googlebot" content="index, follow")
+        meta(name="google" content="notranslate")
+        meta(name="format-detection" content="telephone=no")
+        //Favicons for all devices
+        link(rel="apple-touch-icon" sizes="180x180" href="assets/i/favicons/apple-touch-icon.png")
+        link(rel="icon" type="image/png" href="assets/i/favicons/favicon-32x32.png" sizes="32x32")
+        link(rel="icon" type="image/png" href="assets/i/favicons/favicon-16x16.png" sizes="16x16")
+        link(rel="manifest" href="assets/i/favicons/manifest.json")
+        link(rel="mask-icon" href="assets/i/favicons/safari-pinned-tab.svg" color="#5bbad5")
+        meta(name="theme-color" content="#ffffff")
+        title test pug
+    body
+        header
+            .header
+                .container
+                    .row
+                        .header__logo
+                            a(href="#")
+                                img(src="assets/i/logo.png" alt="logo")
+                        .header__slogan
+                            h1.slogan
+                                a(href="#" class="slogan__link") <span class="no-wrap">Questions will</span> <span class="no-wrap"> be answered</span>
